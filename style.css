@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #232946;
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+}
+
+nav {
+  height: 4rem;
+  width: 100%;
+  background-color: #121629;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+}
+
+nav > .app-name_title {
+  padding-right: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.5rem;
+}
+
+nav > .logo {
+  height: 3.2rem;
+  width: auto;
+}
+
+footer {
+  height: 4rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #121629;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+}
+
+footer > .footer-btn_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > .logo {
+  height: 3.2rem;
+  width: auto;
+}
+
+footer > .footer-btn_container > h4 {
+  padding-right: 10px;
+}
+
+footer > .footer-btn_container > .social_btn {
+  height: 32px;
+  width: auto;
+}
+
+footer > .footer-btn_container > .github_btn {
+  margin-left: 4px;
+  margin-bottom: 2px;
+}
+
+main {
+  margin: 0px 3rem 1rem 6rem;
+}
+
+main > .book-shell_container {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+main > .book-shell_container > .book_container {
+  display: flex;
+  flex-direction: column;
+}
+
+main > .book-shell_container > .book_container > img {
+  height: 15rem;
+  width: 9.5rem;
+}
+
+main > .book-shell_container > .book_container > p {
+  color: #fff;
+  margin: 0;
+}
+
+.book-name_title {
+  font-size: 1rem;
+  padding: 12px 0 6px;
+}
+
+.author-name_title {
+  font-size: 0.9rem;
+  opacity: 60%;
+}
+
+.add-book_container {
+  height: 15rem;
+  width: 9.5rem;
+  color: #121629;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.add-book {
+  background-color: #d9d9d9;
+  border: none;
+}
+
+.add-book:before {
+  content: "";
+  height: 0%;
+  width: 2px;
+}
+
+.add-book:hover {
+  box-shadow: 4px 4px 6px 0 rgba(31, 32, 32, 0.5),
+    -4px -4px 6px 0 rgba(31, 32, 32, 0.5),
+    inset -4px -4px 6px 0 rgba(31, 32, 32, 0.5),
+    inset 4px 4px 6px 0 rgba(31, 32, 32, 0.5);
+}
+
+.add-book .plus_img {
+  width: 4rem;
+  height: 4rem;
+  transition: all, 0.2s;
+}
+
+.add-book:hover .plus_img {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.add-book_title {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px 30px;
+  border: 1px solid #888;
+  color: #000;
+  width: 35%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; */
+}
+
+.modal-content > h1 {
+  width: max-content;
+  margin: 40px auto 20px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  float: right;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal */
+
+label,
+input {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 1rem;
+}
+
+.form-input {
+  margin: 0 0 10px 0;
+  width: 100%;
+}
+
+.form-input > label {
+  width: 100%;
+  padding: 3px;
+  font-size: 1.1rem;
+}
+
+.form-input > input {
+  width: 100%;
+  padding: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.85);
+  border-radius: 2px;
+}
+
+.submit-button {
+  margin: 30px auto 10px;
+  padding: 10px 40px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.85);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="./images/logo.png" alt="logo" />
+      <p class="app-name_title">Book Tracker</p>
+    </nav>
+    <main>
+      <h1>Your Books</h1>
+      <section class="book-shell_container">
+        <div class="book_container">
+          <img src="./images/book.png" alt="book cover" />
+          <p class="book-name_title">Öteki Varlık</p>
+          <p class="author-name_title">Yusuf Akyürek</p>
+        </div>
+        <div class="book_container">
+          <img
+            src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781647225506/the-elder-scrolls-v-skyrim-the-official-advent-calendar-9781647225506_hr.jpg"
+            alt="book cover"
+          />
+          <p class="book-name_title">Öteki Varlık</p>
+          <p class="author-name_title">Yusuf Akyürek</p>
+        </div>
+        <div class="add-book add-book_container">
+          <img class="plus_img" src="./images/plus.png" alt="add a book" />
+          <p class="add-book_title">Add a Book</p>
+        </div>
+        <div id="my-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Add a Book</h1>
+            <form class="modal-form">
+              <div class="form-input">
+                <label for="book-name">Book Name</label>
+                <input type="text" id="book-name" name="book-name" />
+              </div>
+              <div class="form-input">
+                <label for="book-author">Book Author</label>
+                <input type="text" id="book-author" name="book-author" />
+              </div>
+              <div class="form-input">
+                <label for="book-img">Book Image URL</label>
+                <input type="url" id="book-img" name="book-img" />
+              </div>
+              <input type="submit" value="Submit" class="submit-button" />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img class="logo" src="./images/logo.png" alt="logo" />
+      <h4>Product by YMA</h4>
+
+      <div class="footer-btn_container">
+        <h4>Contact Me:</h4>
+        <img class="social_btn email_btn" src="./images/email.png" alt="logo" />
+        <img
+          class="social_btn github_btn"
+          src="./images/github.png"
+          alt="logo"
+        />
+      </div>
+    </footer>
+  </body>
+</html>
