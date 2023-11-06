@@ -13,7 +13,7 @@ const bookName = modalForm["book-name"];
 const bookAuthor = modalForm["book-author"];
 const bookImg = modalForm["book-img"];
 
-const deleteAllBtn = document.querySelector(".nav__delete-btn");
+const deleteAllBtn = document.querySelector(".nav__dropdown--delete-all-btn");
 
 let oldBooks = JSON.parse(localStorage.getItem("books") || "[]");
 

@@ -82,6 +82,7 @@ main > .book-shell_container {
 main > .book-shell_container > .book_container {
   display: flex;
   flex-direction: column;
+  width: 9.5rem;
 }
 
 main > .book-shell_container > .book_container > img {
